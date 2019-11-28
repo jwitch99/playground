@@ -1,3 +1,11 @@
+/**
+ * First attempt
+ *
+ * This uses more memory than is needed by storing all the pair matches
+ * There's a lot of string manipulation and I think we could get rid of most of it.
+ *
+ */
+
 const map = new Map([
     ['IV', 4],
     ['IX', 9],
@@ -14,7 +22,7 @@ const map = new Map([
     ['M', 1000]
 ])
 
-const valueOf = (str) => {
+module.exports.valueOf = (str) => {
 
     let temp = str
     let value = 0
@@ -33,11 +41,3 @@ const valueOf = (str) => {
     return value
 
 }
-
-var romanToInt = function(s) {
-    return valueOf(s);
-};
-
-const tests = [
-    "LVIII"
-].map(test => console.log(test, valueOf(test), 58))

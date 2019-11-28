@@ -1,0 +1,13 @@
+{
+  "name": "leets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonathan Witchard <jwitchard@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
